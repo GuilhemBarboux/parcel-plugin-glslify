@@ -10,8 +10,10 @@ class GlslifyAsset extends Asset {
     this.type = 'js'
   }
   generate () {
+    const content = glslify(this.contents, {inline: true})
+
     return {
-      js: `module.exports = \`${JSON.stringify(glslify(this.contents, {inline: true}))}\``
+      js: `module.exports = \`${content}\``
     }
   }
 }
