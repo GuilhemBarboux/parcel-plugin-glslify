@@ -1,0 +1,40 @@
+{
+  "name": "parcel-plugin-glslify",
+  "version": "1.0.0",
+  "description": "parcel plugin for glslify support",
+  "main": "index.js",
+  "repository": "https://github.com/GuilhemBarboux/parcel-plugin-glslify.git",
+  "author": "guilhembarboux",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GuilhemBarboux/parcel-plugin-glslify/issues"
+  },
+  "homepage": "https://github.com/GuilhemBarboux/parcel-plugin-glslify",
+  "scripts": {
+    "pretest": "npm run clean",
+    "test": "node test/index.js",
+    "clean": "rm -rf .cache && rm -rf dist && DEBUG=\"parcel-plugin-glslify:*\""
+  },
+  "peerDependencies": {
+    "parcel-bundler": "~1"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "parcel-bundler": "^1.2.0"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "glsl-noise": "0.0.0",
+    "glslify": "^6.1.0"
+  }
+}
